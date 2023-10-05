@@ -1,9 +1,40 @@
+body{
+  margin:0px;
+  padding:0px;
+}
+
+div.header{
+  border: solid 0px;
+  overflow: auto;
+  min-width: 200px;
+}
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+
+.header h1 {
+  position: relative;
+  max-width:400px;
+  border: solid 0px;
+  margin: 15px 0px;
+}
+
+div.content{
+    padding:10px;
+}
+
+
 ul.menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  min-width: 200px;
 }
 
 ul.menu li {
