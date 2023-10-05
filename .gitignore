@@ -1,0 +1,10 @@
+# Images bloat the git repo
+# Use imgur or another image hosting platform to host images
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.tif
+*.tiff
+*.bmp
+
