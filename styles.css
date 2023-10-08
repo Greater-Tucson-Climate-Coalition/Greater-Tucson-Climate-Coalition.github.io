@@ -28,42 +28,82 @@ div.header{
 }
 
 .header img {
-  display: inline;
-  position: relative;
   float: left;
   width: 100px;
   height: 100px;
   margin: 5px;
+  border: solid 0px;
 }
 
 .header h1 {
-  display: inline;
-  position: relative;
   float: left;
-  max-width:300px;
+  max-width:250px;
   border: solid 0px;
   margin: 15px 0px;
+  display: block;
+}
+
+@media (max-width: calc(5px + 100px + 5px + 250px + 150px + 20px + 15px))
+{
+    .header h1 {
+      display: none;
+    }
 }
 
 /* Take action */
 a.TakeAction
 {
-  display: inline;
+  float: right;
   position: relative;
   color: black;
   background-color:Gold;
   size: big;
-  float: right;
   text-align: center;
   padding: 14px 16px;
-  margin: 30px 20px;
+  margin-top: 30px;
+  margin-right:20px;
+  margin-bottom: 30px;
+  /**/
+  margin-left: 0px
   font-size: large;
   vertical-align: middle;
   text-decoration: none;
   border: solid 0px;
-  
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  display: block;
 }
 a.TakeAction:hover{
+background-color: #999;
+color: white;
+}
+
+a.TakeActionFooter
+{
+  float: right;
+  position: relative;
+  color: black;
+  background-color:Gold;
+  size: big;
+  text-align: center;
+  padding: 14px 16px;
+  margin-top: 30px;
+  margin-right:20px;
+  margin-bottom: 30px;
+  /**/
+  margin-left: 0px
+  font-size: large;
+  vertical-align: middle;
+  text-decoration: none;
+  border: solid 0px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
+
+a.TakeActionFooter:hover{
 background-color: #999;
 color: white;
 }
@@ -200,13 +240,11 @@ ul.menu li a:hover {
   to {opacity: 1}
 }
 
-
-
 /* CSS for the footer */
 .footer {
     border: solid 0px;
     
-    /*Position absolute and bottom are needed to put the banner at the bottom*/
+    /*Position absolute is needed to put the banner at the bottom*/
     position: absolute;
     bottom: 0px;
     
@@ -216,12 +254,26 @@ ul.menu li a:hover {
     margin: 40px 0px 0px 0px;
     padding: 0px;
     /* set height to bottomBannerHeight variable when CSS variables are working */
-    height: 110px;
+    min-height: 110px;
 }
 
 .footer p {
+    float: left;
     padding: 10px 0px 0px 20px;
     width: 400px;
+    height: 80px;
     color: white;
+    border: solid 0px;
 }
 
+@media (max-width: calc(400px + 150px + 20px + 15px))
+{
+    div.content{
+        /* Set third paramtert to bottomBannerHeight when CSS variables are working */
+        padding:0px 10px 220px 10px;
+    }
+    .footer {
+        /* set height to bottomBannerHeight variable when CSS variables are working */
+        min-height: 220px;
+    }
+}
