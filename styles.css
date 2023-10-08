@@ -158,6 +158,26 @@ ul.menu li a:hover {
   background-color: #111;
 }
 
+div.member{
+  border: solid 0px;
+  overflow: hidden;
+}
+
+img.member { 
+  float: left; 
+  margin: 20px 5px 0px 0px; 
+  vertical-align: middle;
+} 
+
+p.member { 
+  
+} 
+
+div.memberText {
+  border: solid 0px;
+  text-align: justify; 
+  overflow: hidden;
+}
 
 /* Carousel CSS */
 * {box-sizing:border-box}
