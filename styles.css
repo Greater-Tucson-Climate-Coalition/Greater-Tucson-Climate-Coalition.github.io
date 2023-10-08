@@ -43,13 +43,6 @@ div.header{
   display: block;
 }
 
-@media (max-width: calc(5px + 100px + 5px + 250px + 150px + 20px + 15px))
-{
-    .header h1 {
-      display: none;
-    }
-}
-
 /* Take action */
 a.TakeAction
 {
@@ -106,6 +99,22 @@ a.TakeActionFooter
 a.TakeActionFooter:hover{
 background-color: #999;
 color: white;
+}
+
+/* Supports removing the H1 in the top banner when the */
+@media (max-width: calc(5px + 100px + 5px + 250px + 150px + 20px + 15px))
+{
+    .header h1 {
+      display: none;
+    }
+    .header img {
+      width: 200px;
+      height: 200px;
+    }
+    a.TakeAction {
+      margin-top: 80px;
+      margin-bottom: 20px;
+    }
 }
 
 div.content{
@@ -266,7 +275,7 @@ ul.menu li a:hover {
     border: solid 0px;
 }
 
-@media (max-width: calc(400px + 150px + 20px + 15px))
+@media (max-width: calc(400px + 150px + 20px + 15px - 1px))
 {
     div.content{
         /* Set third paramtert to bottomBannerHeight when CSS variables are working */
