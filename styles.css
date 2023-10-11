@@ -169,6 +169,10 @@ img.member {
   vertical-align: middle;
 } 
 
+img {
+  max-width: 800px;
+}
+
 p.member { 
   
 } 
