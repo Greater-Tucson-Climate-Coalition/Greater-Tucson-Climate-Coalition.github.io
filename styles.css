@@ -170,7 +170,7 @@ img.member {
 } 
 
 img {
-  max-width: 800px;
+  max-width: 100%;
 }
 
 p.member { 
