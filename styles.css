@@ -1,6 +1,6 @@
 /* Attempted to use CSS variables, but they don't work */
 :root {
-  --bottomBannerHeight: 110px;
+  --bottomBannerHeight: 120px;
 }
 
 html {
@@ -119,7 +119,7 @@ color: white;
 
 div.content{
     /* Set third paramtert to bottomBannerHeight when CSS variables are working */
-    padding:0px 10px 160px 10px;
+    padding:0px 10px 170px 10px;
 }
 
 div.banner {
@@ -287,7 +287,7 @@ div.memberText {
     margin: 40px 0px 0px 0px;
     padding: 0px;
     /* set height to bottomBannerHeight variable when CSS variables are working */
-    min-height: 110px;
+    min-height: 120px;
 }
 
 .footer p {
