@@ -9,6 +9,7 @@
     </head>
 
     <body>
+        <!-- The banner div contains the top part of the website, and contains links used by users to navigate -->
         <div class="banner">
             <div class=header>
                 <img src="https://i.imgur.com/r2U7JxL.png" alt="Logo showing the earth surrounded by a circular banner with the words Greater Tucson Climate Coalition" />
@@ -24,9 +25,11 @@
                 <li><a href="resources.html">Resources</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            
+
+            <!-- The slideshow-container class contains the carousel, which is a set of images that are flipped through -->
             <div class="slideshow-container">
-              <!-- Full-width images with number and caption text -->
+              <!-- Each image in the carousel is represented with a div block like this -->
+              <!-- Another image can be added by copying the div block, and pointing the img src to a different image -->
               <div class="mySlides fade">
                 <div class="numbertext">1 / 4</div>
                 <img src="https://i.imgur.com/dtK7ujP.jpg" style="width:100%">
@@ -64,7 +67,9 @@
               <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
-        
+
+        <!-- The content of the web page is contained in the the content div block. -->
+        <!-- Update content here -->
         <div class="content">
             
             <h2>Arizona Corportation Commission Public Education Campaign</h2>
@@ -72,7 +77,8 @@
             <p>This election season The Greater Tucson Climate Coalition is conducting a voter eduction campaign to education Arizona's voters on the role and function of the Corporation Commission. This non-partisan voter education campaign asks volunteers to share a simple message: <span style="font-weight: bold;">Vote for three!</span></p>
              <p>Learn more about <a href="acc.html">The Arizona Corporation Commissions</a>.</p>
         </div>
-        
+
+        <!-- The footer contains a short description of the group and the Take Action button -->
         <div class="footer">
             <p>The Greater Tucson Climate Coalition is a group of citizens and community groups, in southern Arizona, that self organize to advocate for climate solutions.</p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSejQ_kB5Vgf5MEES2eMNyLDYaUWaT4_910R76uftDebJHVgvA/viewform?usp=sf_link" class="TakeActionFooter">Take Action!</a>
@@ -80,6 +86,8 @@
         
        
     </body>
+
+    <!-- This script block implements the animation for the carousel -->
     <script type="text/javascript">
 let slideIndex = 0;
 showSlides();
